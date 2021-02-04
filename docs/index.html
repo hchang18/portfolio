@@ -5,71 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aef438d318.js" crossorigin="anonymous"></script>
     <title>Haeyoon Chang</title>
 </head>
-<body class="text-gray-600 font-roboto">
-  <div><!--content wrapper -->
+<body class="text-gray-700 font-roboto flex justify-center">
+  <div class="max-w-6xl flex-grow"><!--content wrapper -->
     <div>
-      <nav>
-        <div>
-          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-            <a href="/">Haeyoon Chang</a>
+      <nav class="flex">
+        <div class="block">
+          <h1 class="font-bold text-lg uppercase p-4 border-b border-gray-100">
+            <a href="#">Haeyoon Chang</a>
           </h1>
         </div>
-        <ul>
-          <li class="text-gray-700 font-bold">
-            <a href="#">
-              <span>Home</span>
+        <ul class="flex items-end justify-end text-sm p-4 border-b border-gray-100">
+          <li class="text-gray-500 px-2">
+            <a href="#" class="hover:font-bold">
+              <span>Home<svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></span>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>About</span>
+          <li class="text-gray-500 px-2 ">
+            <a href="#" class="">
+              <span>Projects<svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></span>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>Archive</span>
+          <li class="text-gray-500 px-2 ">
+            <a href="blog.html">
+              <span>Blog<svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg></span>
             </a>
           </li>
         </ul>
       </nav>
     </div><!-- end nav -->
     
-    <main class="px-16 py-6">
-      <div class="flex justify-end">
-        <a class="text-primary" href="#">Resume</a>
-        <a class="text-primary" href="#">Github</a>
-        <a class="text-primary" href="#">Linkedin</a>
-      </div>
+    <main class="px-16 py-6 bg-gray-50">
 
+
+      <!-- <div class="flex items-center justify-center">
+        <div class="bg-red-500 h-4 w-6"></div>
+        <div class="bg-blue-500 h-8 w-6"></div>
+        <div class="bg-green-500 h-12 w-6"></div>
+      </div> -->
+      
       <header>
-        <h2 class="text-gray-700 text-5xl font-semibold">Hi there!</h2>
-        <h3 class="text-3xl font-semibold">I'm Haeyoon Chang</h3>
+        <h2 class="text-gray-700 text-5xl font-semibold ">Hi there!</h2>
+        <h3 class="mt-8"><p class="font-semibold inline-block">I'm Haeyoon.</p> Welcome to my personal website. You can find information about me, my personal projects, notes, and articles. </h3>
+        
       </header>
 
       <div>
+
+        <!-- About -->
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">About Me</h4>
+        <div class="mt-8">
+          <div class="flex justify-center">
+            <img src="assets/images/haeyoon.jpg" alt="haeyoon" class="rounded-full h-48 w-48">
+          </div>
+          <div class="m-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique modi rem eaque vero sequi aliquam culpa illum omnis, fugit necessitatibus voluptatum possimus, iusto enim quia dignissimos praesentium vitae obcaecati!
+          </div>
+          <div class="flex justify-center">
+            <a class="text-primary btn border-primary border-2 ml-1 hover:bg-primary hover:text-white" href="#">Resume</a>
+            <a class="text-primary btn border-primary border-2 ml-1 hover:bg-primary hover:text-white" href="#"><i class="fab fa-github"></i></a>
+            <a class="text-primary btn border-primary border-2 ml-1 hover:bg-primary hover:text-white" href="#"><i class="fab fa-linkedin"></i></a>
+          </div>          
+        </div>
+
+        <!-- Projects -->
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Projects</h4>
 
-        <div class="mt-8">
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
           <!-- cards go here -->
-          <div>
-            <img src="assets/images/test-roc.png" alt="">
-            <div>
-              <span>Web scraper</span>
-              <span>using Python</span>
+          <div class="card hover:shadow-xl">
+            <img src="assets/images/web.jpg" alt="web" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Web scraper</span>
+              <span class="block text-gray-500 text-sm">This program scrapes the contents on web using Beautifulsoup</span>
+            </div>
+            <div class="badge-container-top">
+              <div class="badge">
+                <span class="m-1">Python</span>
+              </div>
+              <div class="badge">
+                <span class="m-1">Flask</span>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Archive</h4>
-        <div>
-          <!-- cards go here -->
+          <!-- webscrapper in Go -->
+          <div class="card hover:shadow-xl">
+            <img src="assets/images/web.jpg" alt="web" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Web scraper</span>
+              <span class="block text-gray-500 text-sm">This program scrapes the contents on web using Beautifulsoup</span>
+            </div>
+            <div class="badge-container-top">
+              <div class="badge">
+                <span class="m-1">Go</span>
+              </div>
+              <div class="badge">
+                <span class="m-1">Python</span>
+              </div>
+            </div>
+          </div>
+          <!-- stock dashboard -->
+          <div class="card hover:shadow-xl">
+            <img src="assets/images/bull.jpg" alt="bull" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Stock dashboard</span>
+              <span class="block text-gray-500 text-sm">Stock dashboard where you can look into your financial position and trading history</span>
+            </div>
+            <div class="badge-container-top">
+              <div class="badge">
+                <span class="m-1">Javascript</span>
+              </div>
+              <div class="badge">
+                <span class="m-1">Express</span>
+              </div>
+              <div class="badge">
+                <span class="m-1">Docker</span>
+              </div>
+            </div>
+          </div>
+          <!-- LSTM and attention model -->
+          <!-- virtual conference dashboard (airbnb clone) -->      
+          <!-- Hadoop project -->
+
         </div>
 
-        <div>
-          <div class="bg-secondary-100 text-secondary-200">Load more</div>
+        <div class="flex justify-center mt-8">
+          <div class="bg-secondary-100 text-secondary-200 btn">Load more</div>
         </div>
+        
+        <!-- Archive -->
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Archive</h4>
+        <div class="mt-8">
+          <!-- articles go here -->
+          <div>
+            <a class="text-gray-400 hover:text-black transition-all duration-500" href="/blog/image-processing">
+              <h2 class="tracking-tight mb-2 leading-none text-black font-bold">Image Processing</h2>
+              <p class="mb-2">
+                <span class="text-primary uppercase font-semibold tracking-tighter text-xs">Computer Vision</span>
+                <span class="text-gray-700 text-xs">January 31, 2021</span>
+              </p>
+              <p class="text-xs">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente quisquam debitis, dignissimos eum eveniet ad quo? Necessitatibus nihil dolores deserunt hic, quo quas, alias velit quod explicabo nesciunt quibusdam!...
+              </p>
+            </a>
+          </div>
+          <!-- another article goes here -->
+          <div class="mt-4">
+            <a class="text-gray-400 hover:text-black transition-all duration-500" href="/blog/image-processing">
+              <h2 class="tracking-tight mb-2 leading-none text-black font-bold">Image Processing</h2>
+              <p class="mb-2">
+                <span class="text-primary uppercase font-semibold tracking-tighter text-xs">Computer Vision</span>
+                <span class="text-gray-700 text-xs">January 31, 2021</span>
+              </p>
+              <p class="text-xs">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente quisquam debitis, dignissimos eum eveniet ad quo? Necessitatibus nihil dolores deserunt hic, quo quas, alias velit quod explicabo nesciunt quibusdam!...
+              </p>
+            </a>
+          </div>
+          <!-- 3rd article goes here -->
+          <div class="mt-4">
+            <a class="text-gray-400 hover:text-black transition-all duration-500" href="/blog/image-processing">
+              <h2 class="tracking-tight mb-2 leading-none text-black font-bold">Image Processing</h2>
+              <p class="mb-2">
+                <span class="text-primary uppercase font-semibold tracking-tighter text-xs">Computer Vision</span>
+                <span class="text-gray-700 text-xs">January 31, 2021</span>
+              </p>
+              <p class="text-xs">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente quisquam debitis, dignissimos eum eveniet ad quo? Necessitatibus nihil dolores deserunt hic, quo quas, alias velit quod explicabo nesciunt quibusdam!...
+              </p>
+            </a>
+          </div>
+          <!-- read more button -->
+          <div class="flex justify-center mt-8">
+            <div class="bg-secondary-100 text-secondary-200 btn">Read more</div>
+          </div>
+
+        </div>
+
+
       </div>
     </main>
 
