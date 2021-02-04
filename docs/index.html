@@ -11,13 +11,16 @@
 <body class="text-gray-700 font-roboto flex justify-center">
   <div class="max-w-6xl flex-grow"><!--content wrapper -->
     <div>
-      <nav class="flex">
-        <div class="block">
-          <h1 class="font-bold text-lg uppercase p-4 border-b border-gray-100">
+      <nav class="flex justify-between items-center" id="navbar">
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold text-lg uppercase p-4">
             <a href="#">Haeyoon Chang</a>
           </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </div>
         </div>
-        <ul class="flex items-end justify-end text-sm p-4 border-b border-gray-100">
+        <ul class="hidden md:flex text-sm p-4" id="menu">
           <li class="text-gray-500 px-2">
             <a href="#" class="hover:font-bold">
               <span>Home<svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></span>
@@ -58,7 +61,7 @@
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">About Me</h4>
         <div class="mt-8">
           <div class="flex justify-center">
-            <img src="assets/images/haeyoon.jpg" alt="haeyoon" class="rounded-full h-48 w-48">
+            <img src="assets/images/haeyoon.jpg" alt="haeyoon" class="rounded-full w-72 h-72">
           </div>
           <div class="m-4">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique modi rem eaque vero sequi aliquam culpa illum omnis, fugit necessitatibus voluptatum possimus, iusto enim quia dignissimos praesentium vitae obcaecati!
@@ -190,6 +193,6 @@
 
   </div>
   
-
+  <script src="index.js"></script>
 </body>
 </html>
