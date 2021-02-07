@@ -56,26 +56,34 @@
       </div> -->
       
       <header>
-        <h2 class="text-gray-700 text-5xl font-semibold ">Hi there!</h2>
-        <h3 class="mt-8"><p class="font-semibold inline-block">I'm Haeyoon.</p> Welcome to my personal website. You can find information about me, my personal projects, notes, and articles. </h3>
-        
+        <h2 class="text-gray-700 text-5xl font-semibold ">Hi, I'm Haeyoon</h2>
+        <h3 class="mt-8"> </h3>
       </header>
 
       <div>
 
         <!-- About -->
-        <h4 class="font-bold text-lg mt-12 pb-2 border-b border-gray-200">About Me</h4>
+        <!-- <h4 class="font-bold text-lg mt-12 pb-2 border-b border-gray-200">About Me</h4> -->
         <div class="mt-8">
-          <div class="flex justify-center">
-            <img src="assets/images/haeyoon.jpg" alt="haeyoon" class="rounded-full w-72 h-72">
+          <div class="md:grid md:grid-cols-2 items-center">
+            <div class="flex justify-center mt-4 md:col-span-1">
+              <img src="assets/images/haeyoon.jpg" alt="haeyoon" class="rounded-full w-72 h-72">
+            </div>
+            <div class="m-4 md:col-span-1">
+              I'm Haeyoon, master's student in computer science at Portland State University. My passion lies in full stack web development, 
+              and recently in machine learning and computer vision. Before coming back to school, I worked as an economist at JPMorgan Korea, 
+              and research analyst at Institutional Shareholders Service. 
+              <p class="my-2 font-semibold">Languages: Python, Javascript, SQL, Java</p>
+              Please see projects and articles below for comprehensive list of technologies I have experience with. 
+            </div>
+
           </div>
-          <div class="m-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique modi rem eaque vero sequi aliquam culpa illum omnis, fugit necessitatibus voluptatum possimus, iusto enim quia dignissimos praesentium vitae obcaecati!
-          </div>
-          <div class="flex justify-center">
-            <a class="text-primary btn border-primary border-2 ml-1 hover:bg-primary hover:text-white" href="#">Resume</a>
-            <a class="text-primary btn border-primary border-2 ml-1 hover:bg-primary hover:text-white" href="https://github.com/hchang18" target="_blank"><i class="fab fa-github"></i></a>
-            <a class="text-primary btn border-primary border-2 ml-1 hover:bg-primary hover:text-white" href="https://www.linkedin.com/in/haeyoon-chang/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+          <div class="flex justify-center mt-4 font-semibold">Connect with me</div>
+          <div class="flex justify-center items-center mt-4">
+            <a class="text-primary btn border-primary border-2 hover:bg-primary hover:text-white" href="#">Resume</a>
+            <a class="text-primary rounded hover:bg-primary hover:text-white text-5xl ml-2" href="https://github.com/hchang18" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="text-primary rounded hover:bg-primary hover:text-white text-5xl ml-2" href="https://www.linkedin.com/in/haeyoon-chang/" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>          
         </div>
 
@@ -104,22 +112,6 @@
             </div>
           </a>
 
-          <!-- webscraper in Go -->
-          <div class="card hover:shadow-xl">
-            <img src="assets/images/web.jpg" alt="web" class="w-full h-32 sm:h-48 object-cover">
-            <div class="m-4">
-              <span class="font-bold">Web scraper</span>
-              <span class="block text-gray-500 text-sm">This program scrapes the contents on web using Beautifulsoup</span>
-            </div>
-            <div class="badge-container-top">
-              <div class="badge">
-                <span class="m-1">Go</span>
-              </div>
-              <div class="badge">
-                <span class="m-1">Python</span>
-              </div>
-            </div>
-          </div>
           <!-- stock dashboard -->
           <div class="card hover:shadow-xl">
             <img src="assets/images/bull.jpg" alt="bull" class="w-full h-32 sm:h-48 object-cover">
@@ -139,6 +131,25 @@
               </div>
             </div>
           </div>
+
+          <!-- webscraper in Go -->
+          <div class="card hover:shadow-xl">
+            <img src="assets/images/web.jpg" alt="web" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Web scraper</span>
+              <span class="block text-gray-500 text-sm">This program scrapes the contents on web using Beautifulsoup</span>
+            </div>
+            <div class="badge-container-top">
+              <div class="badge">
+                <span class="m-1">Go</span>
+              </div>
+              <div class="badge">
+                <span class="m-1">Python</span>
+              </div>
+            </div>
+          </div>
+
+
           <!-- LSTM and attention model -->
           <!-- virtual conference dashboard (airbnb clone) -->      
           <!-- Hadoop project -->
