@@ -19,3 +19,19 @@
 .btn{
     @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
 }
+
+.article-title{
+    @apply tracking-tight mb-2 leading-none text-black font-bold text-xl ;
+}
+
+.article-category{
+    @apply text-primary uppercase font-semibold tracking-tighter text-xs;
+}
+
+.article-date {
+    @apply text-gray-700 text-xs;
+}
+
+.article-text{
+    @apply text-sm;
+}

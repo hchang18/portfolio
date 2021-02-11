@@ -31748,6 +31748,39 @@ video {
   letter-spacing: 0.05em;
 }
 
+.article-title{
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  letter-spacing: -0.025em;
+}
+
+.article-category{
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 99, 99, var(--tw-text-opacity));
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.article-date {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.article-text{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
